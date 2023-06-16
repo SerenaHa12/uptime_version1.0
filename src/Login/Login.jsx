@@ -1,9 +1,11 @@
 import './login.css';
+import item_1 from '../assets/img/logo-dark.svg'
 export const Login = () => {
     return (
         <div className='login'>
             <div className='login-intro'>
                 <div className='login-logo'></div>
+                    <img  src={item_1} />
                     <h1>SMART EASM</h1>
                     <p>
                         SMART EASM - a comprehensive solution to proactively protect your online presence. 
