@@ -1,9 +1,14 @@
+/* _____________1 Login Page___________________ */
 .login{
     display: flex;
+    height: 100vh;
 }
 
+
+/* _____________1.1 Login Intro___________________ */
 .login-intro{
     width: 60%;
+    height: 100vh;
     text-align: left;
     padding: 56px 56px;
     background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
@@ -19,47 +24,203 @@
 
 .login-intro p{
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
     color: #51606b;
-    width: 572px;
+    width: 640px;
 }
 
 .logo-tool{
     width: 306px;
-    height: 200px;
-    margin: 32px 0px;
-    padding: 20px 10px;
-    background: rgba(228,228,228, 1);
-    border-radius: 16px;
+    margin: 60px 0px 30px 0px;
+    background: #E4E4E4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
 }
+
+.logo-tool::after{
+    content:'';
+    width: 66px;
+    height: 5px;
+    background: #F0DE32;
+    display: block;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    border-radius: 16px;
+    animation: moveRightToLeft 4s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 240px;
+    }
+}
+
 .logo-tool h2{
     font-weight: 600;
     font-size: 20px;
     color: #070000;
     padding: 10px 0px 0 12px;
 }
+
 .logo-tool p{
     width: 282px;
     font-weight: 400;
     font-size: 12px;
     color: #51606b;
-    padding: 10px 0 0 12px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    padding: 0 0 0 12px;
 }
+
 .logo-tool button{
-   margin: 10px 0 0 12px;
+   margin: 0 0 9px 12px;
    padding: 8px 22px;
    border-radius: 8px;
    background-color: #12448a;
    color: #fff;
    border: none;
-   font-weight: 300;
+   font-weight: 400;
    font-size: 15px;
    line-height: 26px;
 }
-.login-logo h2{
+
+.logo-tool button:hover{
+    background-color: #9CA8B3 ;
+    color: #070000;
+}
+
+.login-feature{
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
+    margin: 30px 0;
+    padding: 0 0 0 12px;
+}
+
+.login-demo{
+    position: relative;
+}
+
+.login-demo img {
+    position: absolute;
+    width: 772px;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -70%);
+    animation: moveUpDown 4s ease-in-out infinite;
+}
+  
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translate(-50%, -70%);
+    }
+    50% {
+      transform: translate(-50%, -67%);
+    }
+}
+
+/* _____________1.2 Login Form___________________ */
+.login-form{
+    background-color: #101012;
+    width: 40%;
+    height: 100vh;
+    text-align: left;
+    color: #fff;
+}
+
+form{
+    margin: auto;
+    width: 332px;
+    text-align: left;
+    margin-top: 293px;
+}
+
+form h1{
+    font-size: 32px;
+    font-style: bold;
+    color: #fff;
+    line-height: 48px;
+}
+
+.sub-title{
+    width: 310px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+    letter-spacing: 0.15px;
+}
+
+.form-input{
+    margin-top: 32px;
+}
+
+.input-item:first-child{
+    margin-bottom: 8px;
+}
+
+.input-item input{
+    height: 40px;
+    width: 332px;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 8px 6px 8px 5px;
+    color: #fff;
+}
+
+.input-item input::placeholder{
+    padding: 8px 0px 8px 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.input-item p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    height: 18px;
+    letter-spacing: 0.15px;
+    color: rgba(255, 255, 255, 0.68);
+    margin-top: 3px;
+    padding: 0 0px 0px 5px;
+}
+
+form p a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.15px;
+    padding-left: 229px;
+    color: #3368B4;
+}
+
+form p a:hover{
+    text-decoration: underline;
+    color: #6d94cc;
+}
+
+form button{
+    margin-top: 38px;
+    padding: 8px 141px;
+    border-radius: 8px;
+    background-color: #12448a;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+form button:hover{
+    background-color: #9CA8B3 ;
+    color: #070000;
 }

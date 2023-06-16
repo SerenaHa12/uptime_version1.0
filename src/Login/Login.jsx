@@ -5,6 +5,7 @@ export const Login = () => {
   return (
     <div className="login">
 
+        {/* Login Intro */}
         <div className="login-intro">
             <a href="#"><img src={logo_dark} alt="logo" /></a>
             <h1>SMART EASM</h1>
@@ -16,7 +17,7 @@ export const Login = () => {
                 critical assets with confidence.
             </p>
             <div className="logo-tool">
-                <h2>Uptime Monitoring</h2>
+                <h2>Monitoring</h2>
                 <p>
                     Uptime monitoring tools track and monitor online 
                     resources, minimizing downtime and maximizing availability 
@@ -26,12 +27,32 @@ export const Login = () => {
                 </p>
                 <button>Try Demo</button>
             </div>
-            <h2>Fraud Protection</h2>
-            <h2>Digital Risk Protection</h2>
-            <h2>Threat Intelligence</h2>
+            <h2 className="login-feature">Vulnerabilities</h2>
+            <h2 className="login-feature">Digital Risk Protection</h2>
+            <h2 className="login-feature">Threat Intelligence</h2>
             <div className="login-demo">
-                <img src={item_0} alt="product demo" />
+                <img src={item_0} alt="product demo" className="animate-img"/>
             </div>
+        </div>
+
+        {/* Login Form */}
+        <div className="login-form">
+            <form>
+                <h1>SIGN IN</h1>
+                <p className="sub-title">Please sign in using your organization SSO credentials</p>
+                <div className="form-input">
+                    <div className="input-item">
+                        <input type="email" placeholder="Email" />
+                        <p>Enter your email organization</p>
+                    </div>
+                    <div className="input-item">
+                        <input type="password" placeholder="Password" />
+                        <p>Enter your password</p>
+                    </div>
+                </div>
+                <p><a href="#">Forgot Password?</a></p>
+                <button>Sign In</button>
+            </form>
         </div>
     </div>
   );
