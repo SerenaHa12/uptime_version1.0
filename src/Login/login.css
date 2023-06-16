@@ -1,6 +1,7 @@
 .login{
     display: flex;
 }
+
 .login-intro{
     width: 60%;
     text-align: left;
@@ -8,28 +9,26 @@
     background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
     color: #fff;
 }
+
 .login-intro h1{
     font-size: 50px;
     font-style: bold;
     color: #fff;
     line-height: 75px;
 }
+
 .login-intro p{
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 16px;
     color: #51606b;
-    width: 490px;
+    width: 572px;
 }
-.logo-title{
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
-    margin: 30px 10px;
-}
+
 .logo-tool{
     width: 306px;
     height: 200px;
+    margin: 32px 0px;
     padding: 20px 10px;
     background: rgba(228,228,228, 1);
     border-radius: 16px;
