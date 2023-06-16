@@ -1,16 +1,16 @@
 /* _____________1 Login Page___________________ */
 .login{
     display: flex;
-    height: 100vh;
+    height: 100vh !important;
 }
 
 
 /* _____________1.1 Login Intro___________________ */
 .login-intro{
-    width: 60%;
-    height: 100vh;
+    width: 55%;
+    height: calc(100vh-56px);
     text-align: left;
-    padding: 56px 56px;
+    padding: 56px 0 0 56px;
     background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
     color: #fff;
 }
@@ -26,7 +26,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #51606b;
+    color: #464d52;
     width: 640px;
 }
 
@@ -71,7 +71,7 @@
     width: 282px;
     font-weight: 400;
     font-size: 12px;
-    color: #51606b;
+    color: #464d52;
     margin-top: 8px;
     margin-bottom: 17px;
     padding: 0 0 0 12px;
@@ -127,17 +127,18 @@
 /* _____________1.2 Login Form___________________ */
 .login-form{
     background-color: #101012;
-    width: 40%;
-    height: 100vh;
+    width: 45%;
+    height: calc(100vh-56px);
     text-align: left;
     color: #fff;
+    padding: 56px 0 0 0;
 }
 
 form{
     margin: auto;
-    width: 332px;
+    width: 345px;
     text-align: left;
-    margin-top: 293px;
+    margin-top: 20%;
 }
 
 form h1{
@@ -199,7 +200,7 @@ form p a{
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.15px;
-    padding-left: 229px;
+    padding-left: 242px;
     color: #3368B4;
 }
 
@@ -210,7 +211,7 @@ form p a:hover{
 
 form button{
     margin-top: 38px;
-    padding: 8px 141px;
+    padding: 8px 147px;
     border-radius: 8px;
     background-color: #12448a;
     color: #fff;
@@ -223,4 +224,30 @@ form button{
 form button:hover{
     background-color: #9CA8B3 ;
     color: #070000;
+}
+
+.login-license{
+    margin-top: 290px;
+}
+
+.login-license p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.15px;
+    text-align: center;
+}
+
+.login-license p span a{
+    color: #3368B4;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.15px;
+}
+
+.login-license p span a:hover{
+    text-decoration: underline;
+    color: #6d94cc;
 }

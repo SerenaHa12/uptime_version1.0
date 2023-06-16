@@ -1,6 +1,6 @@
 import "./login.css";
-import logo_dark from "../assets/img/logo-dark.svg";
-import item_0 from "../assets/img/item-0.png";
+import logo_dark from "../../assets/img/logo-dark.svg";
+import item_0 from "../../assets/img/item-0.png";
 export const Login = () => {
   return (
     <div className="login">
@@ -23,7 +23,7 @@ export const Login = () => {
                     resources, minimizing downtime and maximizing availability 
                     for optimal user experience. They ensure business continuity 
                     by promptly alerting to issues and enabling proactive 
-                    problem resolution.
+                    problem resolution...
                 </p>
                 <button>Try Demo</button>
             </div>
@@ -53,6 +53,10 @@ export const Login = () => {
                 <p><a href="#">Forgot Password?</a></p>
                 <button>Sign In</button>
             </form>
+            <div className="login-license">
+                <p>+84 373506620 . <span><a href="#">workspace@gmail.com</a></span></p>
+                <p>@ 2022 - 2023 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
         </div>
     </div>
   );
