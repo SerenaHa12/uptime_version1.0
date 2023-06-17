@@ -166,7 +166,7 @@ form h1{
 }
 
 .input-item input{
-    height: 40px;
+    height: 32px;
     width: 332px;
     border: 1px solid rgba(255, 255, 255, 0.23);
     border-radius: 6px;
@@ -211,7 +211,7 @@ form p a:hover{
 
 form button{
     margin-top: 38px;
-    padding: 8px 147px;
+    padding: 6px 147px;
     border-radius: 8px;
     background-color: #12448a;
     color: #fff;
@@ -227,7 +227,7 @@ form button:hover{
 }
 
 .login-license{
-    margin-top: 290px;
+    margin-top: 340px;
 }
 
 .login-license p{

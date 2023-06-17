@@ -1,7 +1,23 @@
-import "./login.css";
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import "./loginpage.css";
 import logo_dark from "../../assets/img/logo-dark.svg";
 import item_0 from "../../assets/img/item-0.png";
-export const Login = () => {
+
+const LoginPage = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const history = useHistory();
+
+    const handleSignIn = () => {
+        if (email === 'info@gmail.com' && password === '123') {
+            // Đăng nhập thành công, điều hướng sang trang chủ
+            history.push('/home');
+        } else {
+            // Hiển thị thông báo lỗi đăng nhập
+            alert('Email hoặc mật khẩu không chính xác');
+        }
+    };
   return (
     <div className="login">
 
@@ -42,16 +58,26 @@ export const Login = () => {
                 <p className="sub-title">Please sign in using your organization SSO credentials</p>
                 <div className="form-input">
                     <div className="input-item">
-                        <input type="email" placeholder="Email" />
+                        <input 
+                            type="email" 
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} 
+                        />
                         <p>Enter your email organization</p>
                     </div>
                     <div className="input-item">
-                        <input type="password" placeholder="Password" />
+                        <input 
+                            type="password" 
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)} 
+                        />
                         <p>Enter your password</p>
                     </div>
                 </div>
                 <p><a href="#">Forgot Password?</a></p>
-                <button>Sign In</button>
+                <button type="button" onClick={handleSignIn}>Sign In</button>
             </form>
             <div className="login-license">
                 <p>+84 373506620 . <span><a href="#">workspace@gmail.com</a></span></p>
@@ -61,3 +87,5 @@ export const Login = () => {
     </div>
   );
 };
+
+export default LoginPage;

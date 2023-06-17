@@ -1,14 +1,19 @@
 import './App.css';
-import { Dashboard } from './Pages/Dashboard/dashboard';
-import { Login } from './Pages/Login/Login';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HomePage } from './Pages/HomePage/HomePage'
+import { LoginPage } from './Pages/LoginPage/LoginPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-      <Login />
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={LoginPage} />
+          <Route path="/home" component={HomePage} />
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
