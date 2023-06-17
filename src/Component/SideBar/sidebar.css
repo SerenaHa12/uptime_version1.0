@@ -26,9 +26,10 @@
 .feature.active{
     background: rgba(113, 174, 255, 0.1);
     color: #71AEFF;
+    cursor: pointer;
 }
 
-.feature .fa{
+.feature i{
     color: #fff;
     width: 24px;
     height: 24px;
@@ -36,6 +37,7 @@
 }
 
 .feature p{
+    margin-top: 4px;
     font-weight: 600;
     font-size: 16px;
     color: #fff;
