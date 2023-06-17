@@ -1,13 +1,20 @@
 import React from 'react';
-import "./homepage.css";
+import './homepage.css';
+import SideBar from '../../Component/SideBar/SideBar';
 
 const HomePage = () => {
   return (
-    <div>
-      <h2>Trang chủ</h2>
-      <p>Chào mừng bạn đã đăng nhập thành công!</p>
+    <div className="homepage">
+      {/* Sidebar */}
+      <SideBar />
+
+      {/* Nội dung chính của trang */}
+      <div className="main-content">
+        
+      </div>
     </div>
   );
 };
 
 export default HomePage;
+

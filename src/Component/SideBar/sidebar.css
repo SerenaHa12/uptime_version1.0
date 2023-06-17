@@ -1,0 +1,45 @@
+.sidebar{
+    width: 118px;
+    height: 100vh;
+    background-color: #181819;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* __________1. logo___________ */
+.sidebar-logo img{
+    width: 79.45px;
+    height: 32px;
+    margin: 8px 19.275px;
+}
+
+/* __________2. feature___________ */
+
+.feature{
+   margin: 12px 8px;
+   padding-top: 10px;
+   padding-bottom: 3px;
+}
+
+.feature:hover,
+.feature.active{
+    background: rgba(113, 174, 255, 0.1);
+    color: #71AEFF;
+}
+
+.feature .fa{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    margin: 0px 39px;
+}
+
+.feature p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+}
