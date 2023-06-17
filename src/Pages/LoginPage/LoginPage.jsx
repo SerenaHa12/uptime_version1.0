@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import "./loginpage.css";
+import { useNavigate } from 'react-router-dom';
 import logo_dark from "../../assets/img/logo-dark.svg";
 import item_0 from "../../assets/img/item-0.png";
+import "./loginpage.css";
 
 const LoginPage = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const history = useHistory();
 
     const handleSignIn = () => {
-        if (email === 'info@gmail.com' && password === '123') {
-            // Đăng nhập thành công, điều hướng sang trang chủ
-            history.push('/home');
+        // Kiểm tra thông tin đăng nhập
+        if (email === 'workspace@gmail.com' && password === '123') {
+            // Đăng nhập thành công, điều hướng đến trang chủ
+            navigate('/home');
         } else {
-            // Hiển thị thông báo lỗi đăng nhập
-            alert('Email hoặc mật khẩu không chính xác');
+            // Xử lý lỗi đăng nhập không thành công (vd: hiển thị thông báo lỗi)
+            console.log('Đăng nhập không thành công');
         }
     };
+
   return (
     <div className="login">
 
