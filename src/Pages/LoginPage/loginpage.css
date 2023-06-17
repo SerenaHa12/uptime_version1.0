@@ -134,21 +134,21 @@
     padding: 56px 0 0 0;
 }
 
-form{
+.login-form form{
     margin: auto;
     width: 345px;
     text-align: left;
     margin-top: 20%;
 }
 
-form h1{
+.login-form form h1{
     font-size: 32px;
     font-style: bold;
     color: #fff;
     line-height: 48px;
 }
 
-.sub-title{
+.login-form .sub-title{
     width: 310px;
     font-weight: 400;
     font-size: 12px;
@@ -157,15 +157,15 @@ form h1{
     letter-spacing: 0.15px;
 }
 
-.form-input{
+.login-form .form-input{
     margin-top: 32px;
 }
 
-.input-item:first-child{
+.login-form .input-item:first-child{
     margin-bottom: 8px;
 }
 
-.input-item input{
+.login-form .input-item input{
     height: 32px;
     width: 332px;
     border: 1px solid rgba(255, 255, 255, 0.23);
@@ -175,7 +175,7 @@ form h1{
     color: #fff;
 }
 
-.input-item input::placeholder{
+.login-form .input-item input::placeholder{
     padding: 8px 0px 8px 5px;
     font-style: normal;
     font-weight: 400;
@@ -183,7 +183,7 @@ form h1{
     color: #4B5563;
 }
 
-.input-item p{
+.login-form .input-item p{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -194,7 +194,7 @@ form h1{
     padding: 0 0px 0px 5px;
 }
 
-form p a{
+.login-form form p a{
     text-decoration: none;
     font-weight: 400;
     font-size: 12px;
@@ -204,12 +204,12 @@ form p a{
     color: #3368B4;
 }
 
-form p a:hover{
+.login-form form p a:hover{
     text-decoration: underline;
     color: #6d94cc;
 }
 
-form button{
+.login-form form button{
     margin-top: 38px;
     padding: 6px 147px;
     border-radius: 8px;

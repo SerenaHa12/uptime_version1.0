@@ -18,27 +18,29 @@ const HomePage = () => {
 
         {/* 1. Title */}
         <div className="home-title">
-          <div className="title-status"></div>
+          <div className="title-description">
+            <div className="title-status"></div>
 
-          <div className="title-details">
-            <h2>Glasswallets.app</h2>
-            <p>http://glasswallets.app</p>
-          </div>
+            <div className="title-details">
+              <h2>Glasswallets.app</h2>
+              <p>http://glasswallets.app</p>
+            </div>
 
-          <div className="title-action">
-            <label class="switch">
-              <input type="checkbox"/>
-              <span class="slider"></span>
-            </label>
+            <div className="title-action">
+              <label class="switch">
+                <input type="checkbox"/>
+                <span class="slider"></span>
+              </label>
+            </div>
           </div>
 
           <div className="title-feature">
             <button class="title-btn_request">
-              Request
+              <span>Request</span>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
             <button class="title-btn_config">
-              Config
+              <span>Config</span>
               <i class="fa-solid fa-pen"></i>
             </button>
           </div>
