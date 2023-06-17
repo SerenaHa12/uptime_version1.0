@@ -3,3 +3,125 @@
     width: 100vw;
     height: 100vh;
 }
+
+.main-content{
+    position: absolute;
+    top: 97px;
+    left: 142px;
+    width: calc(100% - 118px - 48px);
+}
+/* ___ 1. Title___ */
+.home-title{
+    background-color: rgba(24, 24, 25, 1);
+    border-radius: 16px;
+    color: #fff;
+    height: 112px;
+    display: flex;
+    padding: 24px;
+}
+
+.title-status{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #B8D2F5;
+    border: 2px solid #659FEA;
+    margin: 8px 2px auto 2px;
+}
+
+.title-details{
+    margin-left: 6px;
+}
+
+.title-details h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.title-details p{
+    letter-spacing: 0.15px;
+    color: #B8D2F5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+        /* ___ title-action___ */
+.title-action{
+    margin-left: 12px;
+    margin-top: 8px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 16px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 16px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + .slider {
+    background-color: rgba(184, 210, 245, 1);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgba(184, 210, 245, 1);
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+        /* ___ end title-action___ */
+
+.title-feature{}
+
+.title-feature button{
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    border: 2px solid #B8D2F5;
+    border-radius: 4px;
+    margin: 36px 4px;
+}
+
+.title-feature button i{
+    width: 22px;
+    height: 22px;
+}
+
+/* ___ 1. End Title___ */
+
+/* ___ title-action___ */
+/* ___ title-action___ */
+
+
+/* ___ title-action___ */
+/* ___ title-action___ */
+

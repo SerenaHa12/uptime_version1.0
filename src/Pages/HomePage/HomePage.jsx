@@ -4,6 +4,7 @@ import SideBar from '../../Component/SideBar/SideBar';
 import Header from '../../Component/Header/Header';
 
 const HomePage = () => {
+
   return (
     <div className="homepage">
       {/* Sidebar */}
@@ -11,10 +12,45 @@ const HomePage = () => {
 
       {/* Header */}
       <Header />
-      
+
       {/* Nội dung chính của trang */}
       <div className="main-content">
-        
+
+        {/* 1. Title */}
+        <div className="home-title">
+          <div className="title-status"></div>
+
+          <div className="title-details">
+            <h2>Glasswallets.app</h2>
+            <p>http://glasswallets.app</p>
+          </div>
+
+          <div className="title-action">
+            <label class="switch">
+              <input type="checkbox"/>
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div className="title-feature">
+            <button class="title-btn_request">
+              Request
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="title-btn_config">
+              Config
+              <i class="fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        {/* 2. List */}
+
+        {/* 3. Chart Status */}
+
+        {/* 4. Line Chart */}
+
+        {/* 5. Table */}
       </div>
     </div>
   );
