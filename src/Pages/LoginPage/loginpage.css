@@ -4,7 +4,8 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
+    background: #fff;
+    overflow: hidden;
 }
 
 
@@ -15,7 +16,7 @@
     width: 55%;
     text-align: left;
     padding: 56px 0 0 56px;
-    background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
+    background: linear-gradient(160deg, #9CA8B3 69.33%, rgba(156, 168, 179, 0) 86.66%);
     color: #fff;
 }
 
@@ -37,9 +38,14 @@
 .logo-tool{
     width: 306px;
     margin: 60px 0px 30px 0px;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.logo-tool-inner {
+    border-radius: 16px;
     background: #E4E4E4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
 }
 
 .logo-tool::after{
@@ -60,7 +66,7 @@
         left: 0;
     }
     100% {
-        left: 240px;
+        left: 100%;
     }
 }
 

@@ -35,15 +35,17 @@ const LoginPage = () => {
                 critical assets with confidence.
             </p>
             <div className="logo-tool">
-                <h2>Monitoring</h2>
-                <p>
-                    Uptime monitoring tools track and monitor online 
-                    resources, minimizing downtime and maximizing availability 
-                    for optimal user experience. They ensure business continuity 
-                    by promptly alerting to issues and enabling proactive 
-                    problem resolution...
-                </p>
-                <button>Try Demo</button>
+                <div className='logo-tool-inner'>
+                    <h2>Monitoring</h2>
+                    <p>
+                        Uptime monitoring tools track and monitor online 
+                        resources, minimizing downtime and maximizing availability 
+                        for optimal user experience. They ensure business continuity 
+                        by promptly alerting to issues and enabling proactive 
+                        problem resolution...
+                    </p>
+                    <button>Try Demo</button>
+                </div>
             </div>
             <h2 className="login-feature">Vulnerabilities</h2>
             <h2 className="login-feature">Digital Risk Protection</h2>
