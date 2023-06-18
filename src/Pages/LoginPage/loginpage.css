@@ -1,14 +1,18 @@
 /* _____________1 Login Page___________________ */
 .login{
     display: flex;
-    height: 100vh !important;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
 }
 
 
-/* _____________1.1 Login Intro___________________ */
+/* _____________1. Login Intro___________________ */
 .login-intro{
+    height: 100%;
+    flex: 1;
     width: 55%;
-    height: calc(100vh-56px);
     text-align: left;
     padding: 56px 0 0 56px;
     background: linear-gradient(130.94deg,#97a4af,#c7cdd4);
@@ -108,7 +112,7 @@
 
 .login-demo img {
     position: absolute;
-    width: 772px;
+    width: 60%;
     top: 30%;
     left: 80%;
     transform: translate(-50%, -70%);
@@ -124,18 +128,21 @@
     }
 }
 
-/* _____________1.2 Login Form___________________ */
+/* _____________2. Login Form___________________ */
 .login-form{
+    flex: 1;
     background-color: #101012;
     width: 45%;
-    height: calc(100vh-56px);
+    height: 100%;
     text-align: left;
     color: #fff;
     padding: 56px 0 0 0;
+    display: block;
+    justify-content: space-between;
 }
 
 .login-form form{
-    margin: auto;
+    margin: 28% auto;
     width: 345px;
     text-align: left;
     margin-top: 20%;
@@ -227,7 +234,7 @@ form button:hover{
 }
 
 .login-license{
-    margin-top: 320px;
+    margin: 24px;
 }
 
 .login-license p{

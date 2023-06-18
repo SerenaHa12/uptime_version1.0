@@ -23,7 +23,7 @@ const LoginPage = () => {
   return (
     <div className="login">
 
-        {/* Login Intro */}
+        {/* 1.Login Intro */}
         <div className="login-intro">
             <a href="#"><img src={logo_dark} alt="logo" /></a>
             <h1>SMART EASM</h1>
