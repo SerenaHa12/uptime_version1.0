@@ -47,6 +47,37 @@ const HomePage = () => {
         </div>
 
         {/* 2. List */}
+        <div className='home-list'>
+          <div className='home-item current-time'>
+            <div className='home-item-icon'>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+            <div className='home-item-content'>
+              <h3>699 MS</h3>
+              <p>Current response time</p>
+            </div>
+          </div>
+
+          <div className='home-item loading-time'>
+            <div className='home-item-icon'>
+              <i class="fa-solid fa-download"></i>
+            </div>
+            <div className='home-item-content'>
+              <h3>1699 MS</h3>
+              <p>Current loading time</p>
+            </div>
+          </div>
+
+          <div className='home-item cert'>
+            <div className='home-item-icon'>
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div className='home-item-content'>
+              <h3>54 days</h3>
+              <p>Certificate expiration date</p>
+            </div>
+          </div>
+        </div>
 
         {/* 3. Chart Status */}
 

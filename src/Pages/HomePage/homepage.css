@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 24px;
+    margin-bottom: 24px;
 }
 
 .title-description{
@@ -106,7 +107,7 @@
         /* ___ end title-action___ */
 
 .title-feature{
-    margin: 36px 4px;
+    margin: auto 4px;
 }
 
 .title-feature button{
@@ -123,12 +124,64 @@
     margin: 0;
 }
 
+.title-btn_request{
+    background-color: transparent;
+    border: 2px solid #B8D2F5;
+    color: #B8D2F5;
+    margin-right: 12px;
+}
 
+.title-btn_request span,
+.title-btn_config span{
+    margin-right: 8px;
+}
 
+.title-btn_config{
+    background-color: #B8D2F5;
+    color: #6B7280;
+}
 /* ___ 1. End Title___ */
 
-/* ___ title-action___ */
-/* ___ title-action___ */
+/* ___ 2.List___ */
+.home-list{
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.home-item{
+    background-color: rgba(24, 24, 25, 1);
+    display: flex;
+    width: 421px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.home-item-icon{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.home-item-content{
+    margin: 0 12px;
+}
+
+.home-item-content h3{
+    color: #B8D2F5;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.home-item-content p{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 150%;
+}
+/* ___ 2.End List___ */
 
 
 /* ___ title-action___ */

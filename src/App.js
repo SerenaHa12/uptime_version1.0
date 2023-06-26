@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import HomePage from './Pages/HomePage/HomePage';
+import { Iconoir } from 'iconoir-react';
 
 const App = () => {
   return (
